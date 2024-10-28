@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_4</title>
+</head>
+
+<body>
+    <img style="border: 2px solid blue;" src="./001.PNG" alt="" width="100%">
+    <img style="border: 2px solid blue;" src="./002.PNG" alt="" width="100%">
+
+    <script>
+        console.log('string methods :')
+
+        console.log("trim methods :")
+        let sample = "  Dhanu  "
+        console.log(sample)
+        console.log("this trim() method removes the spaces at both begining and ending of string", sample.trim())
+        console.log("trimstart or trimleft() it remove the spaces at beginning only",sample.trimStart())
+        console.log("trimend or trimright() methods are used to remove the spaces at ending  only",sample.trimEnd())
+
+        console.log("")
+        console.log("toLoweCase method :")
+        let casing = "Belaganti Dhanunjaya"
+        console.log(casing)
+        console.log("This is used to convert the all charecters into uppercase",casing.toLowerCase())
+
+        console.log("")
+        console.log("toUpperCase method :")
+        let casing2 = "Belaganti Dhanunjaya"
+        console.log(casing2)
+        console.log("This is used to convert the all charecters into lowrcase",casing2.toUpperCase())
+
+        console.log("")
+        console.log("charAt method :")
+        let charecter = "Sridhar Nani"
+        console.log(charecter)
+        console.log(charecter.charAt("4"))
+        console.log(charecter.charAt("20"), "(=> if we want know the the charecter out of index then prints nothing in output)")
+        console.log(charecter.charAt("-1"), "(=> Negative indexing doesn't works in charAt method)")
+
+        console.log("")
+        console.log("indexOf method :")
+        let sample2 = "sample string"
+        console.log(sample2)
+        console.log(sample2.indexOf("t"))
+        console.log(sample2.indexOf("g"), "(when we give the number in index or outof range character in string it prints -1)")
+        console.log(sample2.indexOf("4"), "(if we give the number instead of charecter that doesn't exists in range then it displays as -1 index)")
+
+        console.log("")
+        console.log("lastIndexOf method :")
+        let sample3 = "Belaganti Dhanunjaya"
+        console.log(sample3)
+        console.log(sample3.lastIndexOf("t"))
+        console.log(sample3.lastIndexOf("a"),"here a repeated multiple in the string then it gives the first preferece to start first occured from last index")
+        console.log(sample3.lastIndexOf("4"), "(if we give the number instead of charecter that doesn't exists in range then it displays as -1 index)")
+
+    </script>
+</body>
+
+</html>
